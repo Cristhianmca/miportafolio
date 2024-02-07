@@ -581,12 +581,12 @@ video {
   margin-top: 1rem;
 }
 
-.mt-8 {
-  margin-top: 2rem;
-}
-
 .mt-5 {
   margin-top: 1.25rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
 }
 
 .flex {
@@ -705,18 +705,14 @@ video {
   background-color: #000000d9;
 }
 
-.bg-blue-900 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(30 58 138 / var(--tw-bg-opacity));
-}
-
-.bg-\[\] {
-  background-color: ;
-}
-
 .bg-\[\#0b0a1f\] {
   --tw-bg-opacity: 1;
   background-color: rgb(11 10 31 / var(--tw-bg-opacity));
+}
+
+.bg-blue-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 58 138 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-80 {
@@ -818,5 +814,22 @@ video {
 @media (min-width: 1024px) {
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+.contenedor_habilidades{
+  max-width: 70%;
+  margin: auto;
+  margin-top: 5rem;
+  
+}
+.imagenes{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1rem;
+  
+}
+@media (max-width: 680px) {
+  .imagenes{
+    grid-template-columns: repeat(3, 1fr);
   }
 }
