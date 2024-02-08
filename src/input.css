@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.contenedor_habilidades{
+  max-width: 70%;
+  margin: auto;
+  margin-top: 5rem;
+  
+}
+.imagenes{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1rem;
+  
+}
+@media (max-width: 680px) {
+  .imagenes{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

@@ -783,6 +783,24 @@ video {
   transition-duration: 700ms;
 }
 
+.contenedor_habilidades{
+  max-width: 70%;
+  margin: auto;
+  margin-top: 5rem;
+}
+
+.imagenes{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1rem;
+}
+
+@media (max-width: 680px) {
+  .imagenes{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 .hover\:opacity-100:hover {
   opacity: 1;
 }
@@ -814,22 +832,5 @@ video {
 @media (min-width: 1024px) {
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-}
-.contenedor_habilidades{
-  max-width: 70%;
-  margin: auto;
-  margin-top: 5rem;
-  
-}
-.imagenes{
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 1rem;
-  
-}
-@media (max-width: 680px) {
-  .imagenes{
-    grid-template-columns: repeat(3, 1fr);
   }
 }
