@@ -33,3 +33,10 @@
     
   }
 }
+@media (min-width: 768px) {
+  .nombre{
+  text-align: start;
+    
+    
+  }
+}
